@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1a9c9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b91ab1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #826f66;
+}
+
+body ::-moz-selection {
+  background: rgba(102, 37, 102, 0.548);
+}
+
+body ::selection {
+  background: rgba(102, 37, 102, 0.548);
+}
+
+.navbar {
+  background-color: white !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1999;
+}
+
+.navbar .navbar-brand {
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  color: #c1a9c9;
+}
+
+.navbar .nav-link {
+  margin: 0 10px;
+  font-size: 1.1rem;
+  color: #946aa2 !important;
+  font-weight: 400;
+}
+
+.navbar .nav-link:hover {
+  color: #402c47 !important;
+}
+
+header .top-bar {
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding-bottom: 4px;
+}
+
+header h1 {
+  font-size: 2.9rem;
+  font-family: 'Bangers';
+  margin: 1rem 0;
+  color: #c1a9c9;
+}
+
+header p {
+  color: #826f66;
+  line-height: 2;
+}
+
+.section_title h2 {
+  font-size: 2.5rem !important;
+  letter-spacing: 5px;
+  color: #aa8ab5;
+  font-family: 'Bangers', cursive;
+  margin-bottom: 2rem;
+}
+
+.love {
+  margin: 2rem 0;
+}
+
+.love img {
+  width: 100px !important;
+}
+
+.card {
+  border: 0;
+  text-align: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  min-height: 320px;
+  padding-top: 1.3rem;
+}
+
+.card i {
+  color: #9871a6;
+  font-size: 3rem;
+}
+
+.card h4 {
+  color: #9871a6;
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+}
+
+.card p {
+  font-size: 1.2rem;
+}
+
+#hobbies .card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  padding-top: 0;
+}
+
+#hobbies .card:hover {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#hobbies .card img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#hobbies .card h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+#contact .dresses {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  display: inline-block;
+}
+
+#contact .dresses a {
+  display: inline-block;
+  width: 100%;
+}
+
+#contact .dresses img {
+  width: 100%;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+footer p {
+  color: #c1a9c9;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .dresses {
+    -webkit-column-count: 2 !important;
+            column-count: 2 !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
