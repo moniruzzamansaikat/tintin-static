@@ -172,12 +172,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  header {
-    text-align: center !important;
-  }
-  .love img {
-    width: 200px;
-  }
   .dresses {
     -webkit-column-count: 2 !important;
             column-count: 2 !important;
