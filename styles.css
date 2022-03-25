@@ -143,6 +143,7 @@ header p {
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   padding-top: 0;
+  border: 0;
 }
 
 #hobbies .card:hover {
@@ -160,6 +161,7 @@ header p {
 #hobbies .card h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
