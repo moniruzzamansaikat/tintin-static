@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -6,19 +6,26 @@
 /* Track */
 ::-webkit-scrollbar-track {
   background: #fff;
+  width: 40px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1a9c9;
+  background: blueviolet;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #b91ab1;
 }
 
+:root {
+  --clr-primary: #8a2be2;
+  --clr-secondary: #ff6584;
+  --clr-white: #f0f0f0;
+}
+
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -35,8 +42,27 @@ body ::selection {
   background: rgba(102, 37, 102, 0.548);
 }
 
+/* buttons */
+.btn {
+  box-shadow: 0 0 0 !important;
+}
+
+.btn-primary {
+  background-color: var(--clr-secondary);
+  padding: 8px 1.4rem !important;
+  color: var(--clr-primary) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary) !important;
+}
+
+/* end of buttons */
+
 .navbar {
-  background-color: white !important;
+  background-color: var(--clr-primary) !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -47,22 +73,22 @@ body ::selection {
 .navbar .navbar-brand {
   font-family: 'Bangers', cursive;
   font-size: 2rem;
-  color: #c1a9c9;
+  color: var(--clr-white);
 }
 
 .navbar .nav-link {
   margin: 0 10px;
   font-size: 1.1rem;
-  color: #946aa2 !important;
+  color: var(--clr-white) !important;
   font-weight: 400;
 }
 
 .navbar .nav-link:hover {
-  color: #402c47 !important;
+  color: var(--clr-secondary) !important;
 }
 
 header .top-bar {
-  color: gray;
+  color: var(--clr-secondary);
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 2px;
@@ -73,7 +99,7 @@ header h1 {
   font-size: 2.9rem;
   font-family: 'Bangers';
   margin: 1rem 0;
-  color: #c1a9c9;
+  color: blueviolet;
 }
 
 header p {
@@ -84,7 +110,7 @@ header p {
 .section_title h2 {
   font-size: 2.5rem !important;
   letter-spacing: 5px;
-  color: #aa8ab5;
+  color: blueviolet;
   font-family: 'Bangers', cursive;
   margin-bottom: 2rem;
 }
@@ -101,16 +127,17 @@ header p {
   border: 0;
   text-align: center;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   min-height: 350px;
   padding-top: 1.3rem;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  transition: 0.3s ease-in;
+  border-radius: 0;
 }
 
 #interests .card:hover {
-  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 #interests .card .icon-box {
@@ -121,12 +148,12 @@ header p {
 }
 
 #interests .card .icon-box i {
-  color: #9871a6;
+  color: blueviolet;
   font-size: 1.5rem;
 }
 
 #interests .card h4 {
-  color: #9871a6;
+  color: blueviolet;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -139,23 +166,25 @@ header p {
 
 #hobbies .card {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   padding-top: 0;
   border: 0;
+  border-radius: 0;
 }
 
 #hobbies .card:hover {
-  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 #hobbies .card img {
   width: 100%;
   max-height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #hobbies .card h3 {
@@ -167,9 +196,9 @@ header p {
 
 #contact .dresses {
   -webkit-column-count: 3;
-          column-count: 3;
+  column-count: 3;
   -webkit-column-gap: 1rem;
-          column-gap: 1rem;
+  column-gap: 1rem;
   display: inline-block;
 }
 
@@ -185,21 +214,29 @@ header p {
 }
 
 footer p {
-  color: #c1a9c9;
+  color: blueviolet;
   font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {
   .dresses {
     -webkit-column-count: 2 !important;
-            column-count: 2 !important;
+    column-count: 2 !important;
   }
 }
 
 @media (max-width: 520px) {
   .dresses {
     -webkit-column-count: 1 !important;
-            column-count: 1 !important;
+    column-count: 1 !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
+
+.progress-bar {
+  background-color: var(--clr-primary);
+}
+
+#skills .card {
+  border: 0;
+}
